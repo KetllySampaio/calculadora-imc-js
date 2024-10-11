@@ -1,9 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;}
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte em telas menores */
+    }
+
+    .input input {
+        font-size: 14px; /* Ajusta o tamanho da fonte dos inputs */
+    }
+}
 body{
     background-image: url(fundo.webp);
+    
     background-size: cover; /* Faz a imagem cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
@@ -18,12 +24,11 @@ body{
     margin-right: auto;   /* Centraliza horizontalmente */
     text-align: center;    /* Alinha o texto no centro */
 }
-
 .container{
     display: flex;
     background-color: rgb(17, 141, 125);
-    width: 400px;
-    height: 600px;
+    width: 55%;
+    height: 85%;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
@@ -41,8 +46,8 @@ body{
 }
 .input input{
     display: flex;
-    width: 290px;
-    height: 30px;
+    width: 18em;
+    height: 150%;
     border-radius: 10px;
     border: none;
     outline: 0;
@@ -56,14 +61,14 @@ body{
     font: bold;
 }
 button{
-    width: 300px;
-    height: 40px;
+    width: 85%;
+    height: 8%;
     font: bold;
     font-size: 15px;
     background-color: rgba(51, 138, 33, 0.829);
     color: #fff;
     outline: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
 
 }
@@ -71,8 +76,8 @@ button{
     display: flex;
     margin-top: 20px;
     align-items: center;
-    width: 300px;
-    height: 150px;
+    width: 95%;
+    height: 30%;
     border-radius: 5px;
     font: italic;
     font-size: 18px;
@@ -82,5 +87,4 @@ button{
     padding: 10px;
     box-sizing: border-box;
     user-select: none;
-    font: italic;
-}
+    font: italic;}
